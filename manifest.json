@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube playlist manager",
+    "author":"annslittleflower",
+    "version": "1.0.0",
+    "description": "Keep only those videos and playlists that you want to check out at any channel! From now on, all Youtube channels belong to you!",
+    "icons": {
+        "16": "icon2.png",
+        "48": "icon2.png",
+        "128": "icon2.png"
+    },
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
+    "browser_action": {
+        "default_icon": "icon2.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+      "matches": ["https://www.youtube.com/*"],
+      "css": ["mystyles.css"],
+      "js": ["contentScript.js"]
+    }],
+    "web_accessible_resources": [
+        "img/closedEye.png", 
+        "img/openedEye.jpg"
+    ]
+}
+

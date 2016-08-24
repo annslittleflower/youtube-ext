@@ -1,0 +1,64 @@
+<style type="text/css">
+    body{
+        width: 800px;
+    }
+    h1{
+        color:red;
+        text-align: center;
+    }
+    .led{
+        width: 650px;
+    }
+    p{
+        font-size: 16px;
+    }
+    li {
+        margin-bottom: 30px;
+    }
+    .answer{
+        font-size: 14px;
+    }
+    .warning{
+        color:orange;
+    }
+</style>
+<body>
+
+    <h1>Welcome to Youtube List Manager!</h1>
+    <h2><a href="#faq">Click here to see FAQ</a></h2>
+    <p>Let`s check how it works on Led Zeppelin channel as an example</p>
+    <ol>
+        <li>
+            <p>Let`s go to their "videos" page</p>
+            <img class="led" src="popupImg/eyeLed.jpg">
+            <p>We see on each video "eye" button appeared. Click it, and the video will be added <br> to your personal playlist!</p>
+            <p style="float:left">Added item will be marked with "closed eye" button</p> <img style="display: inline;" src="img/closedEye.png" width="32px" height="32px">
+            <p style="clear:both;">You can easily delete video/playlist from your personal playlist by clicking "closed eye" button</p>
+            <p>The same action you can do on "playlists" page.</p>
+        </li>
+        <li>
+            <p>To see videos/playlists that you have added click big red "Show added" button</p>
+            <p>When you click it, other videos/playlist will hide away</p>
+            <img class="led" src="popupImg/addedLed.jpg">
+            <p>When you click "Show all" button, you will see both added and not added playlists/videos</p>
+        </li>
+    </ol>
+
+    <p><a name="faq">FAQ</a></p>
+    <ol>
+        <li>
+            <p>What can I do if "eye" buttons did not appear?</p>
+            <p class="answer">Just reload the page and everything will be ok :)</p>
+        </li>
+        <li>
+            <p>Where are all my lists stored?</p>
+            <p class="answer">All lists are stored locally on your computer in "localStorage"</p>
+        </li>
+    </ol>
+    <p class="warning">If you use CCleaner or similar programs: </p>
+    <p>when you run 'Analyze' - go to Chrome Internet Cache and Cookies and add to Exclude list all the items <br>which have string "Local Storage"</p>
+    <p>If you clear the whole Cache all list created by you will be deleted</p>
+    <p>A lot of useful sites and extensions use localStorage to store your data, so delete only suspicious items</p>
+    <div style="border-top: 1px solid black; width: 100%">Have a nice day and feel free to write on this email - sashkacrab@gmail.com</div>
+
+</body>
